@@ -61,7 +61,7 @@ function afficherTableHTML($capitales){
 
         foreach ($capitales as $pays => $capitale){
             $result .= "<tr>
-                            <td>$pays</td>
+                            <td>".mb_strtoupper($pays)."</td>
                             <td>$capitale</td>
                         </tr>";
         }
