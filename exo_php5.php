@@ -9,6 +9,6 @@ $nomsImput = ["Nom","Prénom","Ville"];
 
 function afficherInput($nomsImput){
     foreach ($nomsImput){
-        $result = ""
+        $result = "<form action=''methode = 'get'>";
     }
 }
