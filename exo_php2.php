@@ -4,7 +4,7 @@
 
 <!--Tête du tableau-->
 
-<table border=1>
+<!-- <table border=1>
     <thead>
         <tr>
             <th>Pays</th>
@@ -12,9 +12,9 @@
         </tr>
     </thead>
 
-<!--Corps du tableau-->
+Corps du tableau-->
 
-    <tbody>
+    <!-- <tbody>
         <tr>
             <td>France</td>
             <td>Paris</td>
@@ -32,7 +32,7 @@
             <td>Rome</td>
         </tr>
     </tbody>
-</table>
+</table> --> 
 <?php
 
 $capitales = ["France"=>"Paris",
@@ -43,9 +43,9 @@ $capitales = ["France"=>"Paris",
 
 ksort($capitales);
 
-foreach($capitales as $pays => $capitale){
-    echo "Le pays $pays a pour capitale : $capitale <br>";
-}
+// foreach($capitales as $pays => $capitale){
+//     echo "Le pays $pays a pour capitale : $capitale <br>";
+// }
 
 echo afficherTableHTML($capitales);
 
