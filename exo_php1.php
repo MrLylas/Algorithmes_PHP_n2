@@ -1,11 +1,10 @@
-<h1>Exercice PHP 1</h1>
+<h1>Exercice 1</h1>
 
 <style>
     .red{
         color : red;
     }
 </style>
-
 
 
 

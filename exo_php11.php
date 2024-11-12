@@ -1,10 +1,13 @@
 <h1>Exercice 11</h1>
 
 <?php
-
+//choix de la région
 $locale = "fr_FR";
+//format de la date (jour/mois/AAAA)
 $dateType = IntlDateFormatter::FULL;
+//temps universel
 $timeType = IntlDateFormatter::NONE;
+//formatter au format fr
 $formatter =new IntlDateFormatter($locale, $dateType, $timeType);
 $dateTime = new DateTime("2015-02-28");
 echo $formatter->format($dateTime);

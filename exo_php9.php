@@ -2,13 +2,13 @@
 
 <?php
 
-
+//création d'un tableau 
 $nomsRadio = ["Monsieur","Madame","Mademoiselle"];
 
 function afficherRadio($nomsRadio){
-    
+//champs d'action
     $choix = "<fieldset>";
-    
+//associations valeurs à puces radio
     foreach ($nomsRadio as $value){
         
         $choix .="<div>

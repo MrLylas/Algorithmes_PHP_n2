@@ -3,17 +3,19 @@
 
 <?php
 
-
+//création tableau
 $formulaire = ["Nom", "Prenom", "email", "Ville", "Sexe", "Formation"];
-
+//création fonction formulaire
 function afficherFormulaire($formulaire){
 
     $result = "<form action='get'>";
 
     foreach ($formulaire as $value){
+//si c'est un email -> saisir email
         if ($value == "email") {
             $type = "email";
             $inputTag = "<input type='email' id='".$value."' name='".$value."'>";
+//Choix du sexe
         } elseif ($value == "Sexe") {
             $type = "radio"; 
             $inputTag = "
@@ -22,6 +24,7 @@ function afficherFormulaire($formulaire){
                 <input type='radio' id='".$value."_femme' name='".$value."' value='Femme'>
                 <label for='".$value."_femme'>Femme</label>
             ";
+//Choix formation
         } elseif ($value == "Formation") {
             $type = "select"; 
             $inputTag = "
@@ -31,6 +34,7 @@ function afficherFormulaire($formulaire){
                     <option value='Chef de projet'>Chef de projet</option>
                 </select>
             ";
+//Nom + Prénom + Ville
         } else {
             $type = "text";
             $inputTag = "<input type='text' id='".$value."' name='".$value."'>";
